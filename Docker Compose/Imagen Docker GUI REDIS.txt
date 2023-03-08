@@ -1,0 +1,5 @@
+docker run --rm -ti -p 5001:5001 --network=dockercompose_default --link curso-redis:curso-redis marian/rebrow
+http://localhost:5001/suid-redis:6379/0/
+
+
+docker run -p 5432:5432 -d --name postgres -e POSTGRES_PASSWORD='!QAZxsw2' postgres:12-alpine
